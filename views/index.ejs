@@ -1,0 +1,285 @@
+<%- include('partials/header') %>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+          <a href="/"><h3><i class="home icon"></i> Motorcycle Grounds</h3></a>
+      </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="  motorcycle icon"></i>Classification</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="/scooter"><i class="folder icon"></i>Scooter</a>
+                    </li>
+                    <li>
+                        <a href="/underbones"><i class="folder icon"></i>Underbones</a>
+                    </li>
+                    <li>
+                        <a href="/standard"><i class="folder icon"></i>Standard</a>
+                    </li>
+                    <li>
+                        <a href="/Sports"><i class="folder icon"></i>Sports</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="cogs icon"></i>Maintenance</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#modSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="wrench icon"></i>Modification</a>
+                <ul class="collapse list-unstyled" id="modSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+
+              <!-- Button trigger modal -->
+              <a href="#" class="download"  data-toggle="modal" data-target="#exampleModalCenter"><i class="key icon"></i>Log In as Admin</a>
+
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle"><i class="key icon"></i>Log In as Admin</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <form>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="download fluid ui button">Log In</button>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+      <div id="content">
+        <div class="ui fluid category search mb-3 ">
+        <div class="ui icon input r-shadow">
+          <input class="prompt" type="text" placeholder="Search...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light b-shadow">
+          <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn text-sidebar bg-yellow">
+                  <i class="fas fa-align-left"></i>
+                  <span></span>
+              </button>
+
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+
+              <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active ui breadcrumb ml-2">
+                          <div class="nav-link section" href="#">Classification</div>
+                          <i class="right angle icon divider"></i>
+                      </li>
+                  </ul>
+              </div>
+
+
+          </div>
+      </nav>
+      <div class="container m-auto">
+        <div class="row">
+          <div class="ui special cards">
+          <div class="col-lg-3">
+            <div class="card b-shadow">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <a href="/scooter" class="ui inverted button">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <img class="icard" src="/img/scooter.png">
+              </div>
+              <div class="content">
+                <h2 class="header text-center">Scooter</h2>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0 pt-5 mt-5">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mb-3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner mt-3">
+                  <div class="carousel-item active">
+                    <p>Good for beginners.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Best for commuting in the city.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Great choice for all skill level.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card b-shadow">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <a href="/underbones" class="ui inverted button">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <img class="icard" src="/img/underbones.png">
+              </div>
+              <div class="content">
+                <h2 class="header text-center">Underbones</h2>
+              </div>
+              <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0 pt-5 mt-5">
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active mb-3"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner mt-3">
+                  <div class="carousel-item active">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card b-shadow">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <a href="/standard" class="ui inverted button">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <img class="icard" src="/img/standard.png">
+              </div>
+              <div class="content">
+                <h2 class="header text-center">Standard</h2>
+              </div>
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0 pt-5 mt-5">
+                  <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active mb-3"></li>
+                  <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner mt-3">
+                  <div class="carousel-item active">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card b-shadow">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <a href="/sports" class="ui inverted button">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <img class="icard" src="/img/sports.png">
+              </div>
+              <div class="content">
+                <h2 class="header text-center">Sports</h2>
+              </div>
+
+              <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0 pt-5 mt-5">
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active mb-3"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner mt-3">
+                  <div class="carousel-item active">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p><br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

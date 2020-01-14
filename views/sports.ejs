@@ -1,0 +1,111 @@
+<%- include('partials/header') %>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+          <a href="/"><h3><i class="home icon"></i> Motorcycle Grounds</h3></a>
+      </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homePagemenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="  motorcycle icon"></i>Classification</a>
+                <ul class="collapse list-unstyled show" id="homeSubmenu">
+                  <li>
+                      <a href="/scooter"><i class="folder icon"></i>Scooter</a>
+                  </li>
+                  <li>
+                      <a href="/underbones"><i class="folder icon"></i>Underbones</a>
+                  </li>
+                  <li>
+                      <a href="/standard"><i class="folder icon"></i>Standard</a>
+                  </li>
+                  <li class="active">
+                      <a href="javascript:;"><i class="open folder icon"></i>Sports</a>
+                  </li>
+                </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="cogs icon"></i>Maintenance</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#modSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="wrench icon"></i>Modification</a>
+                <ul class="collapse list-unstyled" id="modSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="#" class="download"><i class="key icon"></i>Log In as Admin</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="ui fluid category search mb-3 ">
+      <div class="ui icon input r-shadow">
+        <input class="prompt" type="text" placeholder="Search...">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light b-shadow">
+          <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn text-sidebar bg-yellow">
+                  <i class="fas fa-align-left"></i>
+                  <span></span>
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+
+
+              <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                    <div class="ui breadcrumb mb-1 mr-1">
+                      <li class="nav-item">
+                          <a class="nav-link section" href="/">Classification</a>
+                          <i class="right angle icon divider"></i>
+                      </li>
+                      </div>
+                        <div class="ui breadcrumb mb-1 mr-1">
+                      <li class="nav-item active ">
+                          <div class="nav-link active section" href="#">Sports</div>
+                          <i class="right angle icon divider"></i>
+                      </li>
+                        </div>
+                  </ul>
+              </div>
+              </div>
+      </nav>
+
+
+    </div>
+    </div>
+
+
+<%- include('partials/footer') %>
