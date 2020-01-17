@@ -59,7 +59,7 @@
 
         <ul class="list-unstyled CTAs">
             <li>
-                <a href="#" class="download"><i class="key icon"></i>Log In as Admin</a>
+<%- include('partials/modal') %>
             </li>
         </ul>
     </nav>
@@ -104,64 +104,219 @@
                       </div>
               </div>
       </nav>
-      <div class="row m-0 pb-3 ml-3">
 
-        <div class="col-xl-5 col-lg-6 col-md-8">
-          <div class="row">
+      <h2>Scooter Information</h2>
+
+      <div class="col-lg-12 m-0 p-0">
+        <div class="row">
+          <div class="col-5">
 
 
-          <div class="col-xl-5 col-lg-7 col-md-5 col-sm-6  p-0 m-0 mb-2 mr-2 " >
-            <div class="ui labeled button t-shadow" tabindex="0">
-              <div class="ui yellow button t-shadow" style="color:black;">
-                <i class="cog icon"></i>Show Basic Parts
+              <div class="col-xl-10 col-lg-11 col-md-10 col-sm-12 wrap">
+                <div class="row">
+
+                  <!-- <div class="m-0 p-0 mt-2 mr-auto">
+                    <div class="ui labeled button t-shadow re-size" tabindex="0">
+                      <div class="ui yellow button t-shadow" style="color:black;">
+                        <i class="cog icon"></i><br>Basic Parts
+                      </div>
+                      <a class="ui basic yellow left pointing label">
+                        0
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-12 mr-auto p-0 mt-2">
+                    <div class="trig1 ui labeled button t-shadow re-size active" tabindex="0">
+                      <div class=" ui yellow button t-shadow" style="color:black;">
+                        <i class="book icon"></i>Glossary
+                      </div>
+                      <a class="ui basic yellow left pointing label">
+                         9
+                      </a>
+                    </div>
+                  </div> -->
+
+                </div>
               </div>
-              <a class="ui basic yellow left pointing label">
-                12
-              </a>
+
+            <div class="col-lg-11 pl-0 pt-3">
+              <div class="row">
+
+                <button class="headers trig1 marg b-parts">
+                      <i class="cog icon"></i>Basic Parts
+                </button>
+
+              <button class="headers trig1 active gloss">
+                  <i class="book icon"></i>Glossary
+              </button>
+
             </div>
-            <!-- <button class="ui toggle button"style="width:160px">Show Basic Parts</button> -->
+
+
+              <span class="diagram">
+                <canvas></canvas>
+              </span>
+
+            </div>
+
+
+
+
           </div>
 
-          <div class="col-lg-4   col-md-4 col-sm-5 p-0 m-0">
-            <div class="ui labeled button t-shadow" tabindex="0">
-              <div class="ui yellow button t-shadow" style="color:black;">
-                <i class="book icon"></i>Glossary
+
+          <div class="col-xl-7 col-lg-8 mr-auto wrap pr-5 pl-0 ml-0">
+            <div class="container" id="parts-container">
+
+            <div class="col-lg-12 col-md-6" id="part1">
+              <div class="row">
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box1">
+                  <div class="ui piled segment b-shadow">
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box2">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box3">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
               </div>
-              <a class="ui basic yellow left pointing label">
-                 30
-              </a>
+
+              <div class="row">
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box4">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box5">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box6">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box7">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box8">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+                <div class="col-lg-4 pb-2 pl-0 pt-2 box9">
+                  <div class="ui piled segment b-shadow">
+
+                    <p><br><br></p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- <button class="ui toggle button">Parts Glossary</button> -->
-          </div>
-          </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="col-lg-2">
-          </div>
-          <div class="col-lg-2">
-          </div>
-          <div class="col-lg-2">
-          </div>
-        </div>
-
+<!--  -->
+<div class="col-lg-12 col-md-6" id="part2">
+  <div class="row">
+    <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
+      <div class="b-hide ui piled segment b-shadow">
+        <p><br><br></p>
       </div>
-
-      <div class="col-5">
-        <span class="diagram">
-          <canvas></canvas>
-        </span>
-      </div>
-
-
     </div>
+    <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
+      <div class="b-hide ui piled segment b-shadow">
+
+        <p><br><br></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
+      <div class="b-hide ui piled segment b-shadow">
+        <p><br><br></p>
+      </div>
+    </div>
+    <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
+      <div class="b-hide ui piled segment b-shadow">
+
+        <p><br><br></p>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--  -->
+        </div>
+          </div>
+
+<!--  -->
+
+<!-- <div class="col-xl-7 col-lg-8 mr-auto wrap">
+  <div class="container">
+
+  <div class="col-lg-12 col-md-6">
+    <div class="row">
+      <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
+        <div class="b-hide ui piled segment b-shadow">
+          <p><br><br></p>
+        </div>
+      </div>
+      <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
+        <div class="b-hide ui piled segment b-shadow">
+
+          <p><br><br></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
+        <div class="b-hide ui piled segment b-shadow">
+          <p><br><br></p>
+        </div>
+      </div>
+      <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
+        <div class="b-hide ui piled segment b-shadow">
+
+          <p><br><br></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div> -->
+
+        </div>
+      </div>
+
+
+
   </div>
 
 
 
 
 
+
     <!-- threejs -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js" charset="utf-8"></script>
     <script src="/threejs-loader/OBJLoader.js" charset="utf-8"></script>
     <script src="/threejs-loader/MTLLoader.js" charset="utf-8"></script>

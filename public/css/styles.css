@@ -5,15 +5,19 @@ body {
   height: 100%;
   width: 100%;
   background: #eee;
+
 }
 
 .diagram {
-  width: 300px; height: 390px;
-  display: block;
+  width: 400px; height: 300px;
   margin: 0px;
   outline:none !important;
   margin-bottom: 30px;
-
+  padding-left: 0;
+  z-index: 1;
+  display: block;
+  float: left;
+  position:  relative;
 }
 
 canvas {
@@ -21,6 +25,22 @@ canvas {
    outline:none !important;
    box-shadow: 9px 15px 9px -3px rgba(0,0,0,0.32) !important;
   border-radius: .5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border:  none;
+  display: block;
+  z-index: 1;
+  float: left;
+  position:  relative;
+
+}
+
+.inside-canvas {
+  max-width: 300px;
+  max-height: 390px;
+  position:relative;
+  padding: 200px;
+  background: black;
 }
 
 p {
@@ -206,6 +226,11 @@ ul.CTAs a {
     color: #FEBB01 !important;
 }
 
+.downloads {
+    background: #FEBB01 !important;
+    color: #000 !important;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -234,15 +259,108 @@ ul.CTAs a {
     }
 }
 
+
+.headers {
+  background: #FEBB01;
+  width: 199px;
+  color: black;
+  font-size: 15px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  font-weight: 900;
+  border: none;
+  outline: 0 !important;
+  position: relative;
+  display: block;
+  margin-left: 1px;
+  margin-top: 10px;
+}
+
+.marg {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.headers.active {
+  background: #fff;
+  height: 50px;
+  border-bottom: none;
+
+}
+
+.b-parts, .b-parts.active {
+  position: absolute;
+  left: -15px;
+  margin-left: 15.5px;
+  border-top-right-radius: 0;
+}
+
+.gloss, .gloss.active {
+  border-top-left-radius: 0 !important;
+  position: relative;
+  left: 215px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.ui.piled.segment {
+  z-index: 5;
+
+}
+
 .r-shadow {
   box-shadow: 9px 7px 9px -3px rgba(0,0,0,0.22) !important;
   border-radius: 1.4rem;
 }
 
-.b-shadow {
-  box-shadow: 9px 7px 9px -3px rgba(0,0,0,0.22) !important;
+.b-shadow, button  {
+  box-shadow: 5px 7px 5px -3px rgba(0,0,0,0.22) !important;
 }
 
 .t-shadow {
   box-shadow: 9px 7px 19px -1px rgba(0,0,0,0.32) !important;
+}
+
+.re-size {
+  max-width: 155px !important;
+  max-height: 100%;
+
+}
+
+.b-hide   {
+	display:none;
+	flex: 1;
+}
+
+.wrap {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.trig1.active .yellow {
+  background: black  !important;
+  color: #FEBB09 !important;
+
+}
+
+#parts-container {
+    position: relative;
+}
+
+#part1, #part2 {
+    position: absolute;
+    left: 0;
+    top: 0;
 }

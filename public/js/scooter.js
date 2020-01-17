@@ -1,12 +1,46 @@
+$(document).ready(function () {
+
+  $('.trig1').on('click', function() {
+    $('.box1 .ui.piled.segment.b-shadow').fadeToggle(100);
+    $('.box2 .ui.piled.segment.b-shadow').fadeToggle(200);
+    $('.box3 .ui.piled.segment.b-shadow').fadeToggle(300);
+    $('.box4 .ui.piled.segment.b-shadow').fadeToggle(400);
+    $('.box5 .ui.piled.segment.b-shadow').fadeToggle(500);
+    $('.box6 .ui.piled.segment.b-shadow').fadeToggle(600);
+    $('.box7 .ui.piled.segment.b-shadow').fadeToggle(700);
+    $('.box8 .ui.piled.segment.b-shadow').fadeToggle(800);
+    $('.box9 .ui.piled.segment.b-shadow').fadeToggle(900);
+  	});
+
+    $('.trig1').on('click', function() {
+      $('.boxs1 .ui.piled.segment.b-shadow').fadeToggle(1000);
+      $('.boxs2 .ui.piled.segment.b-shadow').fadeToggle(1100);
+      $('.boxs3 .ui.piled.segment.b-shadow').fadeToggle(1200);
+      $('.boxs4 .ui.piled.segment.b-shadow').fadeToggle(1300);
+
+    	});
+
+    $('.headers').on('click', function () {
+      // toggle on off for sidebar
+
+      $('.headers').toggleClass('active');
+      $('.headers').toggleClass('marg');
+
+
+
+
+    });
+
+
 var scooter;
 
 var scene = new THREE.Scene();
-scene.background = new THREE.Color( 'rgba(240,240,240,0.5)' );
+scene.background = new THREE.Color( '#fff' );
 
-const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
+const  camera = new THREE.PerspectiveCamera(50, 400/300, 1, 1000);
 camera.position.z = 4;
 
-const light2 = new THREE.DirectionalLight('#000', 0.9);
+const light2 = new THREE.DirectionalLight('#222', 0.9);
 light2.position.set(-20, 0, 100);
 scene.add(light2);
 var light = new THREE.AmbientLight('#fff');
@@ -14,17 +48,15 @@ scene.add(light);
 
 var contW = 400;
 var contH = 300;
+
+
+
+
 const  renderer = new THREE.WebGLRenderer({canvas: document.querySelector(".diagram canvas"),   Color: 0x000000, clearAlpha: 1});
 renderer.setSize( contW, contH );
 renderer.autoClear = false;
 
-// window.addEventListener('resize', function(){
-//   var width = window.innerWidth;
-//   var height = window.innerHeight;
-//   renderer.setSize(width, height);
-//   camera.aspect = width / height;
-//   camera.updateProjectionMatrix();
-// });
+
 
 controls = new THREE.OrbitControls(camera, renderer.domElement);
 
@@ -51,8 +83,16 @@ new Promise((resolve) => {
 });
 
 function render() {
+  // window.addEventListener('resize', function(){
+  //
+  //
+  //   camera.aspect = contW / contH;
+  //   camera.updateProjectionMatrix();
+  //   renderer.setSize(contW, contH);
+  // });
   requestAnimationFrame(render);
   renderer.render(scene, camera);
 };
 
 render();
+});
