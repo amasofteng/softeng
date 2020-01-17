@@ -12,4 +12,9 @@ $(document).ready(function () {
     type: 'category'
   })
 ;
+
+$('.ui.dropdown').dropdown({
+  // dropdown withouth changing main
+  action: 'hide'
+});
 });

@@ -1,22 +1,22 @@
 $(document).ready(function () {
 
   $('.trig1').on('click', function() {
-    $('.box1 .ui.piled.segment.b-shadow').fadeToggle(100);
-    $('.box2 .ui.piled.segment.b-shadow').fadeToggle(200);
-    $('.box3 .ui.piled.segment.b-shadow').fadeToggle(300);
-    $('.box4 .ui.piled.segment.b-shadow').fadeToggle(400);
-    $('.box5 .ui.piled.segment.b-shadow').fadeToggle(500);
-    $('.box6 .ui.piled.segment.b-shadow').fadeToggle(600);
-    $('.box7 .ui.piled.segment.b-shadow').fadeToggle(700);
-    $('.box8 .ui.piled.segment.b-shadow').fadeToggle(800);
-    $('.box9 .ui.piled.segment.b-shadow').fadeToggle(900);
+    $('.box1 .ui.stacked.segment.b-shadow').fadeToggle(100);
+    $('.box2 .ui.stacked.segment.b-shadow').fadeToggle(150);
+    $('.box3 .ui.stacked.segment.b-shadow').fadeToggle(200);
+    $('.box4 .ui.stacked.segment.b-shadow').fadeToggle(350);
+    $('.box5 .ui.stacked.segment.b-shadow').fadeToggle(400);
+    $('.box6 .ui.stacked.segment.b-shadow').fadeToggle(450);
+    $('.box7 .ui.stacked.segment.b-shadow').fadeToggle(500);
+    $('.box8 .ui.stacked.segment.b-shadow').fadeToggle(550);
+    $('.box9 .ui.stacked.segment.b-shadow').fadeToggle(600);
   	});
 
     $('.trig1').on('click', function() {
-      $('.boxs1 .ui.piled.segment.b-shadow').fadeToggle(1000);
-      $('.boxs2 .ui.piled.segment.b-shadow').fadeToggle(1100);
-      $('.boxs3 .ui.piled.segment.b-shadow').fadeToggle(1200);
-      $('.boxs4 .ui.piled.segment.b-shadow').fadeToggle(1300);
+      $('.boxs1 .ui.stacked.segment.b-shadow').fadeToggle(1000);
+      $('.boxs2 .ui.stacked.segment.b-shadow').fadeToggle(1100);
+      $('.boxs3 .ui.stacked.segment.b-shadow').fadeToggle(1200);
+      $('.boxs4 .ui.stacked.segment.b-shadow').fadeToggle(1300);
 
     	});
 

@@ -66,12 +66,19 @@
 
     <!-- Page Content  -->
     <div id="content">
-      <div class="ui fluid category search mb-3 ">
-      <div class="ui icon input r-shadow">
-        <input class="prompt" type="text" placeholder="Search...">
-        <i class="search icon"></i>
+      <div class="row">
+        <div class="ui fluid category search ml-3 mb-3 ">
+          <div class="ui icon input r-shadow">
+            <input class="prompt" type="text" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+
+
       </div>
-      <div class="results"></div>
+
+      <%- include('partials/searchNuser') %>
+
     </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light b-shadow">
           <div class="container-fluid">
@@ -115,27 +122,6 @@
               <div class="col-xl-10 col-lg-11 col-md-10 col-sm-12 wrap">
                 <div class="row">
 
-                  <!-- <div class="m-0 p-0 mt-2 mr-auto">
-                    <div class="ui labeled button t-shadow re-size" tabindex="0">
-                      <div class="ui yellow button t-shadow" style="color:black;">
-                        <i class="cog icon"></i><br>Basic Parts
-                      </div>
-                      <a class="ui basic yellow left pointing label">
-                        0
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-6 col-lg-12 mr-auto p-0 mt-2">
-                    <div class="trig1 ui labeled button t-shadow re-size active" tabindex="0">
-                      <div class=" ui yellow button t-shadow" style="color:black;">
-                        <i class="book icon"></i>Glossary
-                      </div>
-                      <a class="ui basic yellow left pointing label">
-                         9
-                      </a>
-                    </div>
-                  </div> -->
 
                 </div>
               </div>
@@ -172,18 +158,18 @@
             <div class="col-lg-12 col-md-6" id="part1">
               <div class="row">
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box1">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box2">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box3">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
@@ -192,19 +178,19 @@
 
               <div class="row">
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box4">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box5">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box6">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
@@ -212,19 +198,19 @@
               </div>
               <div class="row">
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box7">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box8">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
                 </div>
                 <div class="col-lg-4 pb-2 pl-0 pt-2 box9">
-                  <div class="ui piled segment b-shadow">
+                  <div class="ui stacked segment b-shadow yellow">
 
                     <p><br><br></p>
                   </div>
@@ -236,12 +222,12 @@
 <div class="col-lg-12 col-md-6" id="part2">
   <div class="row">
     <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
-      <div class="b-hide ui piled segment b-shadow">
+      <div class="b-hide ui stacked segment b-shadow yellow">
         <p><br><br></p>
       </div>
     </div>
     <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
-      <div class="b-hide ui piled segment b-shadow">
+      <div class="b-hide ui stacked segment b-shadow yellow">
 
         <p><br><br></p>
       </div>
@@ -250,12 +236,12 @@
 
   <div class="row">
     <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
-      <div class="b-hide ui piled segment b-shadow">
+      <div class="b-hide ui stacked segment b-shadow yellow">
         <p><br><br></p>
       </div>
     </div>
     <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
-      <div class="b-hide ui piled segment b-shadow">
+      <div class="b-hide ui stacked segment b-shadow yellow">
 
         <p><br><br></p>
       </div>
@@ -274,12 +260,12 @@
   <div class="col-lg-12 col-md-6">
     <div class="row">
       <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
-        <div class="b-hide ui piled segment b-shadow">
+        <div class="b-hide ui stacked segment b-shadow yellow">
           <p><br><br></p>
         </div>
       </div>
       <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
-        <div class="b-hide ui piled segment b-shadow">
+        <div class="b-hide ui stacked segment b-shadow yellow">
 
           <p><br><br></p>
         </div>
@@ -288,12 +274,12 @@
 
     <div class="row">
       <div class="col-lg-6 pb-2 pl-0 pt-2 boxs1">
-        <div class="b-hide ui piled segment b-shadow">
+        <div class="b-hide ui stacked segment b-shadow yellow">
           <p><br><br></p>
         </div>
       </div>
       <div class="col-lg-6 pb-2 pl-0 pt-2 boxs2">
-        <div class="b-hide ui piled segment b-shadow">
+        <div class="b-hide ui stacked segment b-shadow yellow">
 
           <p><br><br></p>
         </div>
