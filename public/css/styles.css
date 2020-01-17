@@ -149,9 +149,14 @@ h3 {
     min-width: 250px;
     max-width: 250px;
     background: #FEBB01;
+    height: 670px;
+    margin-top: 20px;
+    margin-left: 10px;
     color: #000;
     transition: all 0.3s;
     box-shadow: 9px 15px 9px -3px rgba(0,0,0,0.32) !important;
+    border-radius: 0.5rem;
+
 
 }
 
@@ -160,6 +165,8 @@ h3 {
 }
 
 #sidebar .sidebar-header {
+  border-radius: 0.5rem;
+
     padding: 20px;
     background: #FEBB01;
 }
@@ -222,6 +229,7 @@ ul.CTAs a {
 }
 
 .download {
+  margin-top: -45px;
     background: #000 !important;
     color: #FEBB01 !important;
 }
@@ -252,7 +260,7 @@ ul.CTAs a {
         margin-left: -250px;
     }
     #sidebar.active {
-        margin-left: 0;
+        margin-left: 10px;
     }
     #sidebarCollapse span {
         display: none;
